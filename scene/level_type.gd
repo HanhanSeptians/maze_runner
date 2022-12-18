@@ -11,6 +11,7 @@ func _on_level1_pressed():
 
 
 func _on_level2_pressed():
+	get_tree().change_scene("res://scene/level_2.tscn") # Replace with function body.
 	pass # Replace with function body.
 
 
