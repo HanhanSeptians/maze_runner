@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/02 Rocket League Theme - Game Select.mp3-57a6634a0da0ab96818885c8e6474244.mp3str"
+
+[deps]
+
+source_file="res://asset/02 Rocket League Theme - Game Select.mp3"
+dest_files=[ "res://.import/02 Rocket League Theme - Game Select.mp3-57a6634a0da0ab96818885c8e6474244.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
