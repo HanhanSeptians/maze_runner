@@ -7,7 +7,7 @@ func _on_Button_pressed():
 
 
 func _on_TextureButton_pressed():
-	get_tree().change_scene("res://scene/level_1.tscn") # Replace with function body.
+	get_tree().change_scene("res://scene/level_type.tscn") # Replace with function body.
 	pass # Replace with function body.
 
 func _process(delta):

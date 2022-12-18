@@ -18,3 +18,7 @@ func _process(delta):
 func _on_Timer_timeout():
 	ms +=1
 	pass # Replace with function body.
+
+
+func _on_Button2_pressed():
+	pass # Replace with function body.
