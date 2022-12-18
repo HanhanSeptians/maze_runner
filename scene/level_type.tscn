@@ -10,7 +10,7 @@
 [ext_resource path="res://asset/level2_button.png" type="Texture" id=8]
 [ext_resource path="res://asset/level3_button_pressed.png" type="Texture" id=9]
 [ext_resource path="res://asset/level1_button_pressed.png" type="Texture" id=10]
-[ext_resource path="res://scene/level_type.gd" type="Script" id=11]
+[ext_resource path="res://script/level_type.gd" type="Script" id=11]
 [ext_resource path="res://asset/01 Fallout 4 Main Theme.mp3" type="AudioStream" id=12]
 
 [node name="level_type" type="Node2D"]
