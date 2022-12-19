@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://asset/fail.png" type="Texture" id=1]
+[ext_resource path="res://asset/button_exit.png" type="Texture" id=2]
+[ext_resource path="res://asset/button_exit_hover.png" type="Texture" id=3]
+[ext_resource path="res://scene/fail.gd" type="Script" id=4]
+[ext_resource path="res://asset/mixkit-horror-lose-2028.wav" type="AudioStream" id=5]
+
+[node name="fail" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_top = -2.0
+margin_right = 1056.0
+margin_bottom = 598.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="ExitButton" type="TextureButton" parent="."]
+margin_left = 406.0
+margin_top = 443.0
+margin_right = 652.0
+margin_bottom = 506.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 3 )
+expand = true
+
+[connection signal="pressed" from="ExitButton" to="." method="_on_ExitButton_pressed"]
