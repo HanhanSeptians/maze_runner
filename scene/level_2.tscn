@@ -56,7 +56,7 @@ rect_scale = Vector2( 2, 2 )
 text = "Exit"
 
 [node name="player" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.46956, -0.10943, 37.6394 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9194, -0.10943, 4.74483 )
 
 [node name="maze_level_2" parent="." instance=ExtResource( 5 )]
 

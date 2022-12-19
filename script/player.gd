@@ -30,3 +30,8 @@ func _physics_process(delta):
 	pass
 
 
+
+
+func _on_Area_area_entered(area):
+	get_tree().change_scene("res://scene/finish.tscn") # Replace with function body.
+	pass # Replace with function body.

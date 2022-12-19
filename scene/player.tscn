@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://script/player.gd" type="Script" id=1]
 [ext_resource path="res://asset/Akai_MAT.material" type="Material" id=2]
@@ -1693,6 +1693,10 @@ tracks/66/keys = PoolRealArray( 0, 1, -0.00223977, 0.0277786, 1.41859e-05, 3.642
 [sub_resource type="CapsuleShape" id=9]
 radius = 0.47125
 
+[sub_resource type="CylinderShape" id=10]
+height = 2.44555
+radius = 0.889777
+
 [node name="player" type="KinematicBody"]
 script = ExtResource( 1 )
 
@@ -2066,3 +2070,13 @@ transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.55
 
 [node name="Camera" type="Camera" parent="SpringArm"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.037, -1.893 )
+
+[node name="Area" type="Area" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.20224, 0 )
+shape = SubResource( 10 )
+
+[connection signal="area_entered" from="Area" to="." method="_on_Area_area_entered"]

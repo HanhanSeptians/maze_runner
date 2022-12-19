@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/TB7L64W-winning.mp3-0290e44aa77cd4a79cfd5b949a9ac558.mp3str"
+
+[deps]
+
+source_file="res://asset/TB7L64W-winning.mp3"
+dest_files=[ "res://.import/TB7L64W-winning.mp3-0290e44aa77cd4a79cfd5b949a9ac558.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
