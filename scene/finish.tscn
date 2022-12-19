@@ -14,26 +14,26 @@ script = ExtResource( 4 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_left = 1.0
-margin_right = 1307.0
-margin_bottom = 675.0
+margin_right = 1027.0
+margin_bottom = 603.0
 texture = ExtResource( 1 )
 expand = true
 
 [node name="ExitButton" type="TextureButton" parent="."]
-margin_left = 177.0
-margin_top = 535.0
-margin_right = 481.0
-margin_bottom = 606.0
+margin_left = 129.0
+margin_top = 473.0
+margin_right = 433.0
+margin_bottom = 544.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 5 )
 texture_hover = ExtResource( 6 )
 expand = true
 
 [node name="NextStage" type="TextureButton" parent="."]
-margin_left = 758.0
-margin_top = 470.0
-margin_right = 1193.0
-margin_bottom = 675.0
+margin_left = 568.0
+margin_top = 404.0
+margin_right = 1003.0
+margin_bottom = 609.0
 texture_normal = ExtResource( 7 )
 texture_pressed = ExtResource( 7 )
 texture_hover = ExtResource( 8 )

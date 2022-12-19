@@ -10,20 +10,24 @@
 script = ExtResource( 3 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 1026.0
+margin_bottom = 592.0
 texture = ExtResource( 1 )
+expand = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
 
 [node name="button_exit" type="TextureButton" parent="."]
-margin_left = 1462.0
-margin_top = 12.0
-margin_right = 1909.0
-margin_bottom = 128.0
+margin_left = 66.0
+margin_top = 58.0
+margin_right = 289.0
+margin_bottom = 116.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 5 )
 texture_hover = ExtResource( 4 )
+expand = true
 
 [connection signal="pressed" from="button_exit" to="." method="_on_button_exit_pressed"]

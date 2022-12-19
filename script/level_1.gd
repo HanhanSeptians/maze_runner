@@ -7,5 +7,5 @@ func _process(delta):
 
 
 func _on_Button2_pressed():
-	get_tree().change_scene("res://scene/main_menumain_menu.tscn") # Replace with function body.
+	get_tree().change_scene("res://scene/main_menu.tscn") # Replace with function body.
 	pass # Replace with function body.
