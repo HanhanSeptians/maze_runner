@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://script/time.gd" type="Script" id=1]
 [ext_resource path="res://asset/Magical Story.ttf" type="DynamicFontData" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://scene/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://script/level_3.gd" type="Script" id=5]
 [ext_resource path="res://asset/02 Rocket League Theme - Game Select.mp3" type="AudioStream" id=6]
+[ext_resource path="res://scene/enemy.tscn" type="PackedScene" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 35
@@ -62,6 +63,18 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.17953, -0.10943, -10.9564 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
+
+[node name="enemy" parent="." instance=ExtResource( 7 )]
+transform = Transform( -0.509362, 0, 0.350504, 0, 0.739277, 0, -0.434837, 0, -0.410576, 0, 1.79262, 14.5412 )
+
+[node name="enemy2" parent="." instance=ExtResource( 7 )]
+transform = Transform( 0.107038, 0, -0.322442, 0, 0.546531, 0, 0.400023, 0, 0.0161605, 2.51889, 3.25005, 9.26698 )
+
+[node name="enemy3" parent="." instance=ExtResource( 7 )]
+transform = Transform( 0.985777, 0, -0.168059, 0, 1, 0, 0.168059, 0, 0.985777, 9.27981, 1.77357, -9.4695 )
+
+[node name="enemy4" parent="." instance=ExtResource( 7 )]
+transform = Transform( 0.231952, 0, -0.972727, 0, 1, 0, 0.972727, 0, 0.231952, -12.7673, 2.14928, 3.83284 )
 
 [connection signal="timeout" from="Control/Button/RichTextLabel/Timer" to="Control/Button/RichTextLabel" method="_on_Timer_timeout"]
 [connection signal="pressed" from="Control/Button2" to="." method="_on_Button2_pressed"]
