@@ -15,6 +15,8 @@ func _process(delta):
 		m +=1 
 		s = 0
 	set_text("TIMER : 0"+ str(m)+":"+str(s)+":"+str(ms))
+	if(s>5):
+		get_tree().change_scene("res://scene/fail.tscn") # Replace with function body.
 	pass
 
 
